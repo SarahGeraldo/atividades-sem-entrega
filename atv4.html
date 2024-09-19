@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento, informando que é um documento HTML5 -->
+<html lang="en">
+  <!-- Início do documento HTML com o idioma configurado como inglês -->
+
+  <head>
+    <!-- Cabeçalho da página, onde ficam os meta dados e links de recursos -->
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configura o viewport para garantir que a página seja responsiva -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Importa uma folha de estilo CSS externa -->
+    <title>Formulário</title>
+    <!-- Define o título da página, que aparece na aba do navegador -->
+  </head>
+
+  <body>
+    <!-- Início do corpo da página -->
+
+    <form action="#" method="get">
+      <!-- Início do formulário; usa o método GET e a ação é "#" (nenhuma ação definida) -->
+
+      <label for="nome">Nome:</label>
+      <!-- Rótulo do campo de texto para o nome -->
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Digite seu nome"
+        required
+      />
+      <!-- Campo de entrada de texto para o nome, com um placeholder e obrigatório -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <label for="email">Email:</label>
+      <!-- Rótulo do campo de texto para o e-mail -->
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu email"
+        required
+      />
+      <!-- Campo de entrada para o e-mail, com validação de formato e obrigatório -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <label for="password">Senha:</label>
+      <!-- Rótulo do campo de texto para a senha -->
+      <input type="password" name="password" id="password" />
+      <!-- Campo de entrada de senha, oculta os caracteres digitados -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <label for="idade">Idade:</label>
+      <!-- Rótulo do campo de número para a idade -->
+      <input type="number" name="idade" id="idade" min="18" max="60" />
+      <!-- Campo de entrada numérica para a idade, com limite mínimo de 18 e máximo de 60 -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <label for="imgPerfil">Imagem Perfil:</label>
+      <!-- Rótulo para selecionar uma imagem de perfil -->
+      <input type="file" name="imgPerfil" id="imgPerfil" />
+      <!-- Campo para upload de arquivo, para selecionar uma imagem de perfil -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <label for="imgProdutos">Imagem Produtos:</label>
+      <!-- Rótulo para selecionar imagens de produtos -->
+      <input type="file" name="imgProdutos" id="imgProdutos" multiple />
+      <!-- Campo para upload de múltiplos arquivos, para selecionar imagens de produtos -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <label for="phone">Telefone:</label>
+      <!-- Rótulo do campo de texto para o telefone -->
+      <input type="tel" name="phone" id="phone" minlength="11" maxlength="15" />
+      <!-- Campo de entrada para telefone, com limites de caracteres mínimo e máximo -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <label for="valorProduto">Valor:</label>
+      <!-- Rótulo para o campo de valor de produto -->
+      <input
+        type="number"
+        name="valorProduto"
+        id="valorProduto"
+        min="0"
+        step="0.010"
+      />
+      <!-- Campo de entrada numérica para valor de produto, com incremento de 0,010 -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <label for="cor_favorita">Cor favorita:</label>
+      <!-- Rótulo para o campo de seleção de cor -->
+      <input type="color" name="cor_favorita" id="cor_favorita" />
+      <!-- Campo de seleção de cor -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <input type="checkbox" name="Basquete" id="Basquete" />
+      <!-- Caixa de seleção (checkbox) para Basquete -->
+      <label for="Basquete">Basquete</label>
+      <!-- Rótulo para a caixa de seleção de Basquete -->
+
+      <input type="checkbox" name="ping_pong" id="ping_pong" />
+      <!-- Caixa de seleção (checkbox) para Ping Pong -->
+      <label for="ping_pong">Ping Pong</label>
+      <!-- Rótulo para a caixa de seleção de Ping Pong -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <input type="radio" name="sexo" id="feminino" value="feminino" />
+      <!-- Botão de seleção (radio) para sexo feminino -->
+      <label for="feminino">Feminino</label>
+      <!-- Rótulo para o botão de seleção de sexo feminino -->
+
+      <input type="radio" name="sexo" id="masculino" value="masculino" />
+      <!-- Botão de seleção (radio) para sexo masculino -->
+      <label for="masculino">Masculino</label>
+      <!-- Rótulo para o botão de seleção de sexo masculino -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <label for="country">País:</label>
+      <!-- Rótulo para o campo de seleção de país -->
+      <select name="country" id="country">
+        <!-- Menu suspenso (select) para seleção de país -->
+        <option value="Brasil">Brasil</option>
+        <!-- Opção de país Brasil -->
+        <option value="EUA">EUA</option>
+        <!-- Opção de país EUA -->
+        <option value="Argentina">Argentina</option>
+        <!-- Opção de país Argentina -->
+        <option value="Alemanha">Alemanha</option>
+        <!-- Opção de país Alemanha -->
+      </select>
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <label for="descricao">Descrição:</label>
+      <!-- Rótulo para o campo de texto para descrição -->
+      <textarea
+        id="descricao"
+        name="descricao"
+        placeholder="Digite uma breve descrição sobre você!"
+        required
+      ></textarea>
+      <!-- Área de texto para descrição, com placeholder e obrigatória -->
+
+      <br />
+      <br />
+      <!-- Quebra de linha dupla para espaçamento -->
+
+      <input type="submit" value="Enviar Formulário" />
+      <!-- Botão para enviar o formulário -->
+    </form>
+    <!-- Fim do formulário -->
+  </body>
+  <!-- Fim do corpo da página -->
+</html>
+<!-- Fim do documento HTML -->
